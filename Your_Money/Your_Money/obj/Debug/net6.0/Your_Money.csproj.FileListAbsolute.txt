@@ -1,0 +1,15 @@
+D:\Your_Money\Your_Money\Your_Money\bin\Debug\net6.0\Your_Money.exe
+D:\Your_Money\Your_Money\Your_Money\bin\Debug\net6.0\Your_Money.deps.json
+D:\Your_Money\Your_Money\Your_Money\bin\Debug\net6.0\Your_Money.runtimeconfig.json
+D:\Your_Money\Your_Money\Your_Money\bin\Debug\net6.0\Your_Money.dll
+D:\Your_Money\Your_Money\Your_Money\bin\Debug\net6.0\Your_Money.pdb
+D:\Your_Money\Your_Money\Your_Money\obj\Debug\net6.0\Your_Money.csproj.AssemblyReference.cache
+D:\Your_Money\Your_Money\Your_Money\obj\Debug\net6.0\Your_Money.GeneratedMSBuildEditorConfig.editorconfig
+D:\Your_Money\Your_Money\Your_Money\obj\Debug\net6.0\Your_Money.AssemblyInfoInputs.cache
+D:\Your_Money\Your_Money\Your_Money\obj\Debug\net6.0\Your_Money.AssemblyInfo.cs
+D:\Your_Money\Your_Money\Your_Money\obj\Debug\net6.0\Your_Money.csproj.CoreCompileInputs.cache
+D:\Your_Money\Your_Money\Your_Money\obj\Debug\net6.0\Your_Money.dll
+D:\Your_Money\Your_Money\Your_Money\obj\Debug\net6.0\refint\Your_Money.dll
+D:\Your_Money\Your_Money\Your_Money\obj\Debug\net6.0\Your_Money.pdb
+D:\Your_Money\Your_Money\Your_Money\obj\Debug\net6.0\Your_Money.genruntimeconfig.cache
+D:\Your_Money\Your_Money\Your_Money\obj\Debug\net6.0\ref\Your_Money.dll
