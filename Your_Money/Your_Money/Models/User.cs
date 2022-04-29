@@ -2,9 +2,9 @@
 {
     public class User
     {
-        private UserControls controls;
-        private List<Income> incomes;
-        private List<Consumption> consumptions;
+        public UserControls controls { get; set; }
+        public List<Income> incomes { get; set; }
+        public List<Consumption> consumptions { get; set; }
         public double Arrive { get; set; }
 
         public User()
