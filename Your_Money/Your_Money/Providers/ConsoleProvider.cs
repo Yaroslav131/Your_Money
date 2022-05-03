@@ -53,46 +53,48 @@ namespace Your_Money.Providers
              Func<Func<string>, double> doubleParser,
              Func<Func<string>, int> intParser)
         {
-            switch (cond)
+            MenuOptions menuOptions = (MenuOptions)cond;
+
+            switch (menuOptions)
             {
-                case (int)MenuOptions.AddIncomeEntry:
+                case MenuOptions.AddIncomeEntry:
                     user.controls.AddIncomeEntry(doubleParser, GetUserLine, user.incomes);
                     break;
 
-                case (int)MenuOptions.AddConsumptionEntry:
+                case MenuOptions.AddConsumptionEntry:
                     user.controls.AddConsumptionEntry(doubleParser, GetUserLine, user.consumptions);
                     break;
 
-                case (int)MenuOptions.DelleteIncomeEntry:
+                case MenuOptions.DelleteIncomeEntry:
                     user.controls.DelleteIncomeEntry(intParser, GetUserLine, user.incomes);
                     break;
 
-                case (int)MenuOptions.DelleteConsumptionEntry:
+                case MenuOptions.DelleteConsumptionEntry:
                     user.controls.DelleteConsumptionEntry(intParser, GetUserLine, user.consumptions);
                     break;
 
-                case (int)MenuOptions.ChangeIncomeEntry:
+                case MenuOptions.ChangeIncomeEntry:
                     user.controls.ChangeIncomeEntry(intParser, doubleParser, GetUserLine, user.incomes);
                     break;
 
-                case (int)MenuOptions.ChangeConsumptionEntry:
+                case MenuOptions.ChangeConsumptionEntry:
                     user.controls.ChangeConsumptionEntry(intParser, doubleParser, GetUserLine, user.consumptions);
                     break;
 
-                case (int)MenuOptions.ShowIncomesTable:
+                case MenuOptions.ShowIncomesTable:
                     DisplayTable(user.incomes);
                     break;
 
-                case (int)MenuOptions.ShowConsumptionTable:
+                case MenuOptions.ShowConsumptionTable:
                     DisplayTable(user.consumptions);
                     break;
 
-                case (int)MenuOptions.ShowArrive:
+                case MenuOptions.ShowArrive:
                     Display($"{Resurses.ArriveString} " +
                         $"{calculation.CalculateListSum(user.incomes) - calculation.CalculateListSum(user.consumptions)}");
                     break;
 
-                case (int)MenuOptions.Exite:
+                case MenuOptions.Exite:
                     break;
 
                 default:
