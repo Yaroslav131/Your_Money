@@ -6,6 +6,4 @@
             : base(money, date) { }
 
     }
-
-
 }
