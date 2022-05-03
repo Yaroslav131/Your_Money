@@ -27,7 +27,7 @@ namespace Your_Money.Providers
 
         private void DisplayTable<T>(List<T> entry) where T : Entry
         {
-            if (entry.Count.Equals(0))
+            if (entry.Count.Equals(Resurses.EmptyArrayCount))
             {
                 Console.WriteLine(Resurses.EmptyListExeption);
 
