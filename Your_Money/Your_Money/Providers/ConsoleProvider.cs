@@ -34,7 +34,7 @@ namespace Your_Money.Providers
                 return;
             }
 
-            for (int counter = 0; counter < entry.Count; counter++)
+            for (int counter = Resurses.CounterStartValue; counter < entry.Count; counter++)
             {
                 Console.Write($"{counter} {entry[counter].Score} {entry[counter].Date} \t");
 
@@ -103,7 +103,7 @@ namespace Your_Money.Providers
 
         public void RunUserInterface()
         {
-            int userCond = 0;
+            var userCond = 0;
 
             do
             {

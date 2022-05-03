@@ -25,5 +25,6 @@
         public const int NumForConverToIdType = 1;
         public const long MinValueOfScore = 0;
         public const long MaxValueOfScore = 9223372036854775807;
+        public const int CounterStartValue = 0;
     }
 }
