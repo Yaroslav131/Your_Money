@@ -5,7 +5,7 @@ namespace Your_Money
     public abstract class Entry
     {
         public int Id { get; set; }
-        [Range(1, 9999999999999999999)]
+        [Range(Resurses.MinValueOfScore, Resurses.MaxValueOfScore)]
         public double Score { get; set; }
         public DateTime Date { get; set; }
 

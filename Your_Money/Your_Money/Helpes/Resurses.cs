@@ -23,5 +23,7 @@
         public const string EmptyListExeption = "List is empty";
         public const string SeccusessOpetationStr = "Operation is seccusessfull";
         public const int NumForConverToIdType = 1;
+        public const long MinValueOfScore = 0;
+        public const long MaxValueOfScore = 9223372036854775807;
     }
 }
