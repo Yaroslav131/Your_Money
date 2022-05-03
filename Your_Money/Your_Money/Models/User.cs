@@ -9,7 +9,6 @@
 
         public User()
         {
-            Arrive = 0;
             incomes = new List<Income>();
             consumptions = new List<Consumption>();
             controls = new UserControls();
