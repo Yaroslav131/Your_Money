@@ -22,5 +22,6 @@
         public const string IndexOutOfRangeExeption = "Index out of range";
         public const string EmptyListExeption = "List is empty";
         public const string SeccusessOpetationStr = "Operation is seccusessfull";
+        public const int NumForConverToIdType = 1;
     }
 }
