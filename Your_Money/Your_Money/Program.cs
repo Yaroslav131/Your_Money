@@ -1,5 +1,5 @@
 ﻿using Your_Money.Providers;
 
-ConsoleProvider provider = new ConsoleProvider();
+IUIPovider provider = new ConsoleProvider();
 
 provider.RunUserInterface();

@@ -2,7 +2,7 @@
 
 namespace Your_Money.Providers
 {
-    public class ConsoleProvider
+    public class ConsoleProvider: IUIPovider
     {
         private User user;
         private MathCalculation calculation;
@@ -18,14 +18,14 @@ namespace Your_Money.Providers
             Parser.DisplayString = Display;
         }
 
-        private void Display(string text)
+        public void Display(string text)
         {
             Console.WriteLine(text);
 
-            Thread.Sleep(2500);
+            Console.ReadKey();
         }
 
-        private void DisplayTable<T>(List<T> entry) where T : Entry
+        public void DisplayTable<T>(List<T> entry) where T : Entry
         {
             if (entry.Count.Equals(Resurses.EmptyArrayCount))
             {
@@ -44,7 +44,7 @@ namespace Your_Money.Providers
             Console.ReadKey();
         }
 
-        private string? GetUserLine()
+        public string? GetUserLine()
         {
             return Console.ReadLine();
         }
@@ -118,6 +118,6 @@ namespace Your_Money.Providers
                 SelectOperation(userCond, Parser.ParseToDoubleSum, Parser.ParseToIntId);
             }
             while (userCond != (int)MenuOptions.Exite);
-        }
+        }       
     }
 }
