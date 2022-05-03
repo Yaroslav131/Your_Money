@@ -6,19 +6,16 @@ namespace Your_Money.Providers
     {
         private User user;
         private MathCalculation calculation;
-        private Parser parser;
-
+        
         public ConsoleProvider()
         {
-            parser = new Parser();
-
             calculation = new MathCalculation();
 
             user = new User();
 
             user.controls.UserControlsNotify += Display;
 
-            parser.DisplayString = Display;
+            Parser.DisplayString = Display;
         }
 
         private void Display(string text)
@@ -114,9 +111,9 @@ namespace Your_Money.Providers
 
                 Display(Resurses.MenuString);
 
-                userCond = parser.ParseToIntId(GetUserLine);
+                userCond = Parser.ParseToIntId(GetUserLine);
 
-                SelectOperation(userCond, parser.ParseToDoubleSum, parser.ParseToIntId);
+                SelectOperation(userCond, Parser.ParseToDoubleSum, Parser.ParseToIntId);
             }
             while (userCond != (int)MenuOptions.Exite);
         }

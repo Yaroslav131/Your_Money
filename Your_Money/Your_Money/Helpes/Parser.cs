@@ -1,11 +1,11 @@
 ﻿namespace Your_Money
 {
-    public class Parser
+    public static class Parser
     {
         public delegate void ParserHandler(string info);
-        public ParserHandler? DisplayString;
+        public static ParserHandler? DisplayString;
 
-        public int ParseToIntId(Func<string> getString)
+        public static int ParseToIntId(Func<string> getString)
         {
             int resoult;
 
@@ -19,7 +19,7 @@
             return resoult - 1;
         }
 
-        public double ParseToDoubleSum(Func<string> getString)
+        public static double ParseToDoubleSum(Func<string> getString)
         {
             double resoult;
 
