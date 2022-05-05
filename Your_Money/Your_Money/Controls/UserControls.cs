@@ -8,10 +8,10 @@ namespace Your_Money.Models
         public event UserControlsHendler? UserControlsNotify;
 
         public void AddIncomeEntry(Func<Func<string>, double> doubleParser, 
-            Func<string> getSting,List<Income> incomes)
+            Func<string> getSting,List<IncomeEntry> incomes)
         {
             var money = doubleParser(getSting);
-            var income = new Income(money, DateTime.Now);
+            var income = new IncomeEntry(money, DateTime.Now);
             var results = new List<ValidationResult>();
             var context = new ValidationContext(income);
 
@@ -31,10 +31,10 @@ namespace Your_Money.Models
         }
 
         public void AddConsumptionEntry(Func<Func<string>, double> doubleParser, 
-            Func<string> getSting, List<Consumption> consumptions)
+            Func<string> getSting, List<ConsumptionEntry> consumptions)
         {
             var money = doubleParser(getSting);
-            var consumption = new Consumption(money, DateTime.Now);
+            var consumption = new ConsumptionEntry(money, DateTime.Now);
             var results = new List<ValidationResult>();
             var context = new ValidationContext(consumption);
 
@@ -54,7 +54,7 @@ namespace Your_Money.Models
         }
 
         public void DelleteIncomeEntry(Func<Func<string>, int> intParser,
-            Func<string> getSting, List<Income> incomes)
+            Func<string> getSting, List<IncomeEntry> incomes)
         {
             if (incomes.Count.Equals(0))
             {
@@ -78,7 +78,7 @@ namespace Your_Money.Models
         }
 
         public void DelleteConsumptionEntry(Func<Func<string>, int> intParser,
-            Func<string> getSting, List<Consumption> consumptions)
+            Func<string> getSting, List<ConsumptionEntry> consumptions)
         {
             if (consumptions.Count.Equals(0))
             {
@@ -102,7 +102,7 @@ namespace Your_Money.Models
         }
 
         public void ChangeIncomeEntry(Func<Func<string>, int> intParser, Func<Func<string>, double> doubleParser,
-            Func<string> getSting, List<Income> incomes)
+            Func<string> getSting, List<IncomeEntry> incomes)
         {
             if (incomes.Count.Equals(0))
             {
@@ -124,13 +124,13 @@ namespace Your_Money.Models
                 return;
             }
 
-            incomes[entryId] = new Income(money, DateTime.Now);
+            incomes[entryId] = new IncomeEntry(money, DateTime.Now);
 
             UserControlsNotify?.Invoke(Resurses.SeccusessOpetationStr);
         }
 
         public void ChangeConsumptionEntry(Func<Func<string>, int> intParser, Func<Func<string>, double> doubleParser,
-            Func<string> getSting, List<Consumption> consumptions)
+            Func<string> getSting, List<ConsumptionEntry> consumptions)
         {
             if (consumptions.Count.Equals(0))
             {
@@ -152,7 +152,7 @@ namespace Your_Money.Models
                 return;
             }
 
-            consumptions[entryId] = new Consumption(money, DateTime.Now);
+            consumptions[entryId] = new ConsumptionEntry(money, DateTime.Now);
 
             UserControlsNotify?.Invoke(Resurses.SeccusessOpetationStr);
         }
