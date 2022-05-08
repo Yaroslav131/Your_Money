@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Your_Money\\Your_Money\\Your_Money\\Your_Money.csproj",
+      "projectUniqueName": "D:\\Your_Money_2.0\\Your_Money\\Your_Money\\Your_Money.csproj",
       "projectName": "Your_Money",
-      "projectPath": "D:\\Your_Money\\Your_Money\\Your_Money\\Your_Money.csproj",
+      "projectPath": "D:\\Your_Money_2.0\\Your_Money\\Your_Money\\Your_Money.csproj",
       "packagesPath": "C:\\Users\\nikol\\.nuget\\packages\\",
-      "outputPath": "D:\\Your_Money\\Your_Money\\Your_Money\\obj\\",
+      "outputPath": "D:\\Your_Money_2.0\\Your_Money\\Your_Money\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nikol\\AppData\\Roaming\\NuGet\\NuGet.Config",

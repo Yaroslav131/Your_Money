@@ -1,8 +1,8 @@
 ﻿namespace Your_Money
 {
-    public class Income : Entry
+    public class IncomeEntry : Entry
     {
-        public Income(double money, DateTime date)
+        public IncomeEntry(double money, DateTime date)
             : base(money, date) { }
 
     }
